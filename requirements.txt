@@ -1,0 +1,10 @@
+# Runtime:
+uvicorn[standard]
+aiofiles
+ptpython
+
+# dev:
+mypy
+types-PyYAML
+types-aiofiles
+pre-commit

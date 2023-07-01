@@ -1,0 +1,22 @@
+
+
+[tool.black]
+target-version = ["py39"]
+line-length = 90
+
+[tool.ruff]
+select = ["E", "F", "W", "B", "TID25", "I"]
+ignore = ["E501", "B007", "B027", "B904"]
+unfixable = ["F841"]
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.mypy]
+show_error_codes = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+check_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+warn_unreachable = true
